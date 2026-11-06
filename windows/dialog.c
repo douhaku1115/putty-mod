@@ -761,7 +761,7 @@ bool do_config(Conf *conf)
     setup_config_box(pds->ctrlbox, false, 0, 0);
     win_setup_config_box(pds->ctrlbox, &pds->dp->hwnd, has_help(), false, 0);
 
-    pds->dp->wintitle = dupprintf("%s Configuration", appname);
+    pds->dp->wintitle = dupprintf("%s Configuration (My Mod)", appname);
     pds->dp->data = conf;
 
     dlg_auto_set_fixed_pitch_flag(pds->dp);
