@@ -315,6 +315,13 @@ static void start_backend(WinGuiSeat *wgs)
     }
     term_setup_window_titles(wgs->term, realhost);
     sfree(realhost);
+    /* My Mod: SSH の接続先を Saved Sessions に自動で残す */
+    if (conf_get_int(wgs->conf, CONF_protocol) == PROT_SSH) {
+        char* name = dupprintf("Recent %s", conf_get_str(wgs->conf,
+            CONF_host));
+        sfree(save_settings(name, wgs->conf));
+        sfree(name);
+    }
 
     /*
      * Connect the terminal to the backend for resize purposes.
