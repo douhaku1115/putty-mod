@@ -482,7 +482,7 @@ CONF_OPTION(serline,
 )
 CONF_OPTION(serspeed,
     VALUE_TYPE(INT),
-    DEFAULT_INT(9600),
+    DEFAULT_INT(115200),
     SAVE_KEYWORD("SerialSpeed"),
 )
 CONF_OPTION(serdatabits,
