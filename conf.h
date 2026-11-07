@@ -819,12 +819,12 @@ CONF_OPTION(win_name_always,
 )
 CONF_OPTION(width,
     VALUE_TYPE(INT),
-    DEFAULT_INT(80),
+    DEFAULT_INT(100),
     SAVE_KEYWORD("TermWidth"),
 )
 CONF_OPTION(height,
     VALUE_TYPE(INT),
-    DEFAULT_INT(24),
+    DEFAULT_INT(30),
     SAVE_KEYWORD("TermHeight"),
 )
 CONF_OPTION(font,
