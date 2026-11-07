@@ -60,7 +60,7 @@ CONF_OPTION(close_on_exit,
 )
 CONF_OPTION(warn_on_close,
     VALUE_TYPE(BOOL),
-    DEFAULT_BOOL(true),
+    DEFAULT_BOOL(false),
     SAVE_KEYWORD("WarnOnClose"),
 )
 CONF_OPTION(ping_interval,
